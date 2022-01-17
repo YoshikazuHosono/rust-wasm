@@ -4,8 +4,8 @@ import { memory } from "rust-wasm/rust_wasm_bg";
 
 const CELL_SIZE = 5; // px
 const GRID_COLOR = "#CCCCCC";
-const DEAD_COLOR = "#FFFFFF";
-const ALIVE_COLOR = "#000000";
+const DEAD_COLOR = "#FF00FF";
+const ALIVE_COLOR = "#00FF00";
 
 // Construct the universe, and get its width and height.
 const universe = Universe.new();
