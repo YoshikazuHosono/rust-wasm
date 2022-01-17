@@ -1,6 +1,6 @@
-mod utils;
-
 use wasm_bindgen::prelude::*;
+
+mod utils;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -14,6 +14,6 @@ extern {
 }
 
 #[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, rust-wasm!");
+pub fn greet(name: &str) {
+    alert(&format!("Hello,{}!!!", name));
 }
